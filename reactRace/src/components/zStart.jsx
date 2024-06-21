@@ -6,6 +6,7 @@ import UseRefe from "./UseRefe"
 import ChildA from "./propDriling/ChildA";
 import ChildAC from "./ContextAPI/ChildA";
 import UseMemo from "./UseMemo";
+import UseCallBack from "./UseCallBack";
 
 
 const data = createContext()
@@ -16,7 +17,8 @@ const Start = () => {
     const gender = "Male"
     return (
         <>
-            <UseMemo />
+            <UseCallBack />
+            {/* <UseMemo /> */}
             {/* <data.Provider value={name}>
                 <data1.Provider value={gender}>
                     <ChildAC />
