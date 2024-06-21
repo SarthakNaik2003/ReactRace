@@ -5,6 +5,7 @@ import UseEffect from "./UseEffect";
 import UseRefe from "./UseRefe"
 import ChildA from "./propDriling/ChildA";
 import ChildAC from "./ContextAPI/ChildA";
+import UseMemo from "./UseMemo";
 
 
 const data = createContext()
@@ -15,11 +16,12 @@ const Start = () => {
     const gender = "Male"
     return (
         <>
-            <data.Provider value={name}>
+            <UseMemo />
+            {/* <data.Provider value={name}>
                 <data1.Provider value={gender}>
                     <ChildAC />
                 </data1.Provider>
-            </data.Provider>
+            </data.Provider> */}
             {/* <ChildA name={name} /> */}
             {/* <UseRefe /> */}
             {/* <UseEffect /> */}
